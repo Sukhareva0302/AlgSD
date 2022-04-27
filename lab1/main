@@ -1,0 +1,33 @@
+#include <iostream>
+#include"Map.h"
+using namespace std;
+
+
+int main()
+{
+    Map<int, int> map;
+    map.insert(3, 33);
+    map.insert(5, 55);
+    map.insert(2, 22);
+    map.insert(1, 11);
+    map.insert(4, 44);
+    map.insert(6, 66);
+    map.insert(7, 77);
+    cout << "\nInitial map:";
+    map.print();
+    cout << "\nMap after removal of elements [5, 55] and [3, 33]:";
+    map.remove(3);
+    map.remove(5);
+    map.print();
+    List<int> list;
+    cout << "\nList of keys:";
+    list = map.get_keys();
+    list.printList();
+    cout << "\nList of values:";
+    list = map.get_values();
+    list.printList();
+    cout << "\nEmpty map (map afret clear() function):";
+    map.clear();
+    map.print();
+    
+}
