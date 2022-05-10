@@ -1,0 +1,37 @@
+
+#include <iostream>
+#include "ShF_Cipher.h"
+using namespace std;
+
+
+
+int main()
+{
+
+    string test_messsage1 = "it is test string";
+    string test_message2 = "Hello World!";
+    ShF_Cipher test1(test_messsage1);
+    ShF_Cipher test2(test_message2);
+    test1.printPeriodicity();
+    test1.printCodeForChar();
+    test1.printSize();
+    test1.printCode();
+    test1.printDecode();
+    test1.printCoefficient();
+
+    test2.printPeriodicity();
+    test2.printCodeForChar();
+    test2.printSize();
+    test2.printCode();
+    test2.printDecode();
+    test2.printCoefficient();
+
+    string test_messsage3 = "Your secret is safe with my indifference";
+    ShF_Cipher test3(test_messsage3);
+    test3.printPeriodicity();
+    test3.printCodeForChar();
+    test3.printSize();
+    test3.printCode();
+    test3.printDecode();
+    test3.printCoefficient();
+}
