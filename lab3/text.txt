@@ -1,0 +1,5 @@
+Saint-P;Moscow;10;20
+Moscow;Khabarovsk;1;35
+Saint-P;Khabarovsk;14;N/A
+Vladivostok;Khabarovsk;13;8
+Vladivostok;Saint-P;N/A;20
