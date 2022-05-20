@@ -1,0 +1,12 @@
+#include <iostream>
+#include "Algorithm.h"
+using namespace std;
+
+int main()
+{
+	string str = "S O 3/S P 3/O Q 3/O P 2/P R 2/Q R 4/Q T 2/R T 3";
+	NodeList list1 = form_List_from_file("test.txt");
+	NodeList list2 = form_List_from_string(str);
+	cout << "Max Flow from file: "<<maxFlow(list1, "S", "T")<<endl;
+	cout << "Same, but from string: " << maxFlow(list2, "S", "T") << endl;
+}
